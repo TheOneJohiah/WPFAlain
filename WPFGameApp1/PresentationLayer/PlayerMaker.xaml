@@ -15,10 +15,18 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button
+        <Grid
+            Grid.Row="0"
+            Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button
                 x:Name="Button_Close"
                 Grid.Row="0"
-                Grid.Column="3"
+                Grid.Column="2"
                 Width="110"
                 Height="30"
                 Content="Close"
@@ -26,5 +34,6 @@
                 FontFamily="Georgia"
                 HorizontalAlignment="Center"
                 Click="Button_Close_Click"/>
+        </Grid>
     </Grid>
 </Window>

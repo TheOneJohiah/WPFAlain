@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFGameApp1"
         mc:Ignorable="d"
-        Title="Main Window" Height="1080" Width="1920">
+        Title="Main Window" Height="900" Width="1600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -69,7 +69,15 @@
                 HorizontalAlignment="Center"
                 Click="Button_Edit_Click"/>
         </Grid>
-        <Button
+        <Grid
+            Grid.Row="0"
+            Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button
                 x:Name="Button_Close"
                 Grid.Row="0"
                 Grid.Column="2"
@@ -80,6 +88,8 @@
                 FontFamily="Georgia"
                 HorizontalAlignment="Center"
                 Click="Button_Close_Click"/>
+        </Grid>
+
     </Grid>
     
 </Window>
