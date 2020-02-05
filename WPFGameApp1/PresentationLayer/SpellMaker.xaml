@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="SpellMaker" Height="1080" Width="1920">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="670"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button
+                x:Name="Button_Close"
+                Grid.Row="0"
+                Grid.Column="3"
+                Width="110"
+                Height="30"
+                Content="Close"
+                FontSize="16"
+                FontFamily="Georgia"
+                HorizontalAlignment="Center"
+                Click="Button_Close_Click"/>
     </Grid>
 </Window>

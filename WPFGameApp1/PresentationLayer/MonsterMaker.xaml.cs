@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace WPFGameApp1.PresentationLayer
 {
     /// <summary>
-    /// Interaction logic for SpellMaker.xaml
+    /// Interaction logic for MonsterMaker.xaml
     /// </summary>
-    public partial class SpellMaker : Window
+    public partial class MonsterMaker : Window
     {
-        public SpellMaker()
+        public MonsterMaker()
         {
             InitializeComponent();
         }

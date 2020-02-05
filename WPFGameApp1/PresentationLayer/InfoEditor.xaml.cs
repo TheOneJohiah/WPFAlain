@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace WPFGameApp1.PresentationLayer
 {
     /// <summary>
-    /// Interaction logic for SpellMaker.xaml
+    /// Interaction logic for InfoEditor.xaml
     /// </summary>
-    public partial class SpellMaker : Window
+    public partial class InfoEditor : Window
     {
-        public SpellMaker()
+        public InfoEditor()
         {
             InitializeComponent();
         }

@@ -8,12 +8,78 @@
         Title="Main Window" Height="1080" Width="1920">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="670"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="670"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        <Grid
+            Grid.Row="0"
+            Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="Button_Player"
+                Grid.Row="0"
+                Grid.Column="0"
+                Width="110"
+                Height="30"
+                Content="New Player"
+                FontSize="16"
+                FontFamily="Georgia"
+                HorizontalAlignment="Center"
+                Click="Button_Player_Click"/>
+            <Button
+                x:Name="Button_Monster"
+                Grid.Row="0"
+                Grid.Column="1"
+                Width="110"
+                Height="30"
+                Content="New Monster"
+                FontSize="16"
+                FontFamily="Georgia"
+                HorizontalAlignment="Center"
+                Click="Button_Monster_Click"/>
+            <Button
+                x:Name="Button_Spell"
+                Grid.Row="0"
+                Grid.Column="2"
+                Width="110"
+                Height="30"
+                Content="New Spell"
+                FontSize="16"
+                FontFamily="Georgia"
+                HorizontalAlignment="Center"
+                Click="Button_Spell_Click"/>
+            <Button
+                x:Name="Button_Edit"
+                Grid.Row="0"
+                Grid.Column="3"
+                Width="110"
+                Height="30"
+                Content="Edit Stats"
+                FontSize="16"
+                FontFamily="Georgia"
+                HorizontalAlignment="Center"
+                Click="Button_Edit_Click"/>
+        </Grid>
+        <Button
+                x:Name="Button_Close"
+                Grid.Row="0"
+                Grid.Column="2"
+                Width="110"
+                Height="30"
+                Content="Close"
+                FontSize="16"
+                FontFamily="Georgia"
+                HorizontalAlignment="Center"
+                Click="Button_Close_Click"/>
     </Grid>
+    
 </Window>
