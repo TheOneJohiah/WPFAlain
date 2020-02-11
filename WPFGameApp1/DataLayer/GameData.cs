@@ -7,7 +7,16 @@ namespace WPFGameApp1.DataLayer
 {
     class GameData
     {
-        private List<SpellComponent> componentList = new List<SpellComponent>;
-        componentList
+
+
+        public static List<SpellComponent> SpellComponentList()
+        {
+            return new List<SpellComponent>()
+            {
+                new SpellComponent("Aspect", "The main aspect component", 1, 10, 20, 1, 10, 1, 0, 0, 0, false, false, false)
+            };
+        }
+        
+        
     }
 }
