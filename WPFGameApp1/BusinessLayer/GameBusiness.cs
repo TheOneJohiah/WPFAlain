@@ -9,7 +9,6 @@ namespace WPFGameApp1.BusinessLayer
     public class GameBusiness
     {
         GameSessionViewModel _gameSessionViewModel;
-        PlayerMaker _playerMaker = null;
 
         public GameBusiness()
         {
