@@ -28,6 +28,7 @@ namespace WPFGameApp1.PresentationLayer
 
         private void Button_Confirm_Click(object sender, RoutedEventArgs e)
         {
+            NewSpell();
             this.Close();
         }
 
