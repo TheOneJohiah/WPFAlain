@@ -75,12 +75,38 @@
                     <StackPanel
                         Orientation="Horizontal"
                         HorizontalAlignment="Left">
-                        <Label Content="Name" Style="{StaticResource LabelSInfo}"/>
+                        <Label Content="Spell name" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                                Height="Auto"
-                                Width="Auto"
-                                Style="{StaticResource SInputBox}"
-                                Text="{Binding NewSpell.Name, Mode=OneWayToSource}"/>
+                            x:Name="name"
+                            Height="Auto"
+                            Width="Auto"
+                            Style="{StaticResource SInputBox}"/>
+                    </StackPanel>
+                    <StackPanel
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                        <Label Content="Spell description" Style="{StaticResource LabelSInfo}"/>
+                        <TextBox
+                            x:Name="description"
+                            Height="Auto"
+                            Width="Auto"
+                            Style="{StaticResource SInputBox}"/>
+                    </StackPanel>
+                    <StackPanel
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                        <Label Content="Aspect" Style="{StaticResource LabelSInfo}"/>
+                        <TextBox
+                            x:Name="aspect"
+                            Height="Auto"
+                            Width="Auto"
+                            Style="{StaticResource SInputBox}"/>
+                        <Label Content="Magnitude" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
+                        <TextBox
+                            x:Name="magnitude"
+                            Height="Auto"
+                            Width="Auto"
+                            Style="{StaticResource SInputBox}"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>

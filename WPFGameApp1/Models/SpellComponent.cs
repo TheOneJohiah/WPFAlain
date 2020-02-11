@@ -18,37 +18,12 @@ namespace WPFGameApp1.Models
 		private int _range;
 		private int _radius;
 		private int _duration;
-		private bool _concentrate;
-		private bool _inverse;
-		private bool _homing;
-
-		public bool Homing
-		{
-			get { return _homing; }
-			set { _homing = value; }
-		}
-
-
-		public bool Inverse
-		{
-			get { return _inverse; }
-			set { _inverse = value; }
-		}
-
-
-		public bool Concentrate
-		{
-			get { return _concentrate; }
-			set { _concentrate = value; }
-		}
-
 
 		public int Duration
 		{
 			get { return _duration; }
 			set { _duration = value; }
 		}
-
 
 		public int Radius
 		{
@@ -112,7 +87,7 @@ namespace WPFGameApp1.Models
         #endregion
 
         #region CONSTRUCTORS
-		public SpellComponent(string name, string description, int magnitude, int damage, int manaCost, int manaMult, int focusCost, int focusMult, int range, int radius, int duration, bool concentrate, bool inverse, bool homing)
+		public SpellComponent(string name, string description, int magnitude, int damage, int manaCost, int manaMult, int focusCost, int focusMult, int range, int radius, int duration)
 		{
 			_name = name;
 			_description = description;
@@ -125,9 +100,6 @@ namespace WPFGameApp1.Models
 			_range = range;
 			_range = radius;
 			_duration = duration;
-			_concentrate = concentrate;
-			_inverse = inverse;
-			_homing = homing;
 		}
         #endregion
 

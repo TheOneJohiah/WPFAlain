@@ -25,5 +25,10 @@ namespace WPFGameApp1.PresentationLayer
         {
             this.Close();
         }
+
+        private void NewSpell()
+        {
+
+        }
     }
 }

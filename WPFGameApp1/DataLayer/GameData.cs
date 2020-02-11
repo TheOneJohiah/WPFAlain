@@ -13,7 +13,7 @@ namespace WPFGameApp1.DataLayer
         {
             return new List<SpellComponent>()
             {
-                new SpellComponent("Aspect", "The main aspect component", 1, 10, 20, 1, 10, 1, 0, 0, 0, false, false, false)
+                new SpellComponent("Aspect", "The main aspect component", 1, 10, 20, 1, 10, 1, 0, 0, 0)
             };
         }
         
