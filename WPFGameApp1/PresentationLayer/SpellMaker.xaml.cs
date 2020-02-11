@@ -26,9 +26,16 @@ namespace WPFGameApp1.PresentationLayer
             this.Close();
         }
 
+        private void Button_Confirm_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
         private void NewSpell()
         {
 
         }
+
+
     }
 }
