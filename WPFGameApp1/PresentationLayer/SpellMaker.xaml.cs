@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPFGameApp1.DataLayer;
 
 namespace WPFGameApp1.PresentationLayer
 {
@@ -28,13 +29,7 @@ namespace WPFGameApp1.PresentationLayer
 
         private void Button_Confirm_Click(object sender, RoutedEventArgs e)
         {
-            NewSpell();
-            this.Close();
-        }
-
-        private void NewSpell()
-        {
-
+            //NewSpell();
         }
 
 

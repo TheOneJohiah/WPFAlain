@@ -18,6 +18,41 @@ namespace WPFGameApp1.Models
 		private int _range;
 		private int _radius;
 		private int _duration;
+		private bool _isMulti;
+		private bool _isChannel;
+		private bool _isConcentrate;
+		private bool _isInverse;
+		private bool _isHoming;
+
+		public bool IsHoming
+		{
+			get { return _isHoming; }
+			set { _isHoming = value; }
+		}
+
+		public bool IsInverse
+		{
+			get { return _isInverse; }
+			set { _isInverse = value; }
+		}
+
+		public bool IsConcentrate
+		{
+			get { return _isConcentrate; }
+			set { _isConcentrate = value; }
+		}
+
+		public bool IsChannel
+		{
+			get { return _isChannel; }
+			set { _isChannel = value; }
+		}
+
+		public bool IsMulti
+		{
+			get { return _isMulti; }
+			set { _isMulti = value; }
+		}
 
 		public int Duration
 		{
@@ -87,7 +122,7 @@ namespace WPFGameApp1.Models
         #endregion
 
         #region CONSTRUCTORS
-		public SpellComponent(string name, string description, int magnitude, int damage, int manaCost, double manaMult, int focusCost, double focusMult, int range, int radius, int duration)
+		public SpellComponent(string name, string description, int magnitude, int damage, int manaCost, double manaMult, int focusCost, double focusMult, int range, int radius, int duration, bool isMulti, bool isChannel, bool isConcentrate, bool isInverse, bool isHoming)
 		{
 			_name = name;
 			_description = description;
@@ -100,6 +135,11 @@ namespace WPFGameApp1.Models
 			_range = range;
 			_range = radius;
 			_duration = duration;
+			_isMulti = isMulti;
+			_isChannel = isChannel;
+			_isConcentrate = isConcentrate;
+			_isInverse = isInverse;
+			_isHoming = isHoming;
 		}
         #endregion
 
