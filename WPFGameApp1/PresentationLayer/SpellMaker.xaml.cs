@@ -19,7 +19,7 @@ namespace WPFGameApp1.PresentationLayer
     /// </summary>
     public partial class SpellMaker : Window
     {
-        GameSessionViewModel _gameSessionViewModel;
+        //GameSessionViewModel _gameSessionViewModel;
         
         public SpellMaker()
         {
@@ -32,12 +32,14 @@ namespace WPFGameApp1.PresentationLayer
 
         private void Button_Confirm_Click(object sender, RoutedEventArgs e)
         {
-            NewSpell();
+            NewSpell(SpellList);
         }
 
-        private Spell NewSpell()
+        private List<Spell> NewSpell(List<Spell> SpellList)
         {
-            List<Spell>
+
+
+            //SpellList.Add(new Spell(name, description, aspect));
             throw new NotImplementedException();
         }
     }
