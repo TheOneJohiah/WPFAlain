@@ -13,10 +13,12 @@ using System.Windows.Shapes;
 namespace WPFGameApp1.PresentationLayer
 {
     /// <summary>
-    /// Interaction logic for Combat.xaml
+    /// Interaction logic for GameSessionView.xaml
     /// </summary>
     public partial class GameSessionView : Window
     {
+        GameSessionViewModel _gameSessionViewModel;
+
         public GameSessionView(GameSessionViewModel gameSessionViewModel)
         {
             InitializeComponent();

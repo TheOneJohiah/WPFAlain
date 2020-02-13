@@ -13,6 +13,22 @@ namespace WPFGameApp1.DataLayer
             return SpellComponentList().FirstOrDefault(i => i.Name == searchName);
         }
 
+        public static List<Player> PlayerList()
+        {
+            return new List<Player>()
+            {
+
+            };
+        }
+
+        public static List<Spell> SpellList()
+        {
+            return new List<Spell>()
+            {
+
+            };
+        }
+
         public static List<SpellComponent> SpellComponentList()
         {
             return new List<SpellComponent>()

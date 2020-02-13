@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameCalculatorV1
+namespace WPFGameApp1.Models
 {
     class Player
     {
+		#region PROPERTIES
+		private string _name;
+		private string _description;
 		private int _athleticism;
 		private int _toughness;
 		private int _mentalFortitude;
@@ -18,6 +21,19 @@ namespace GameCalculatorV1
 		private int _manaRegen;
 		private int _spellCap;
 		private int _maxFocus;
+		private List<Spell> _learnedSpells;
+
+		public string Name
+		{
+			get { return _name; }
+			set { _name = value; }
+		}
+
+		public string Description
+		{
+			get { return _description; }
+			set { _description = value; }
+		}
 
 		public int Athleticism
 		{
@@ -91,5 +107,25 @@ namespace GameCalculatorV1
 			set { _maxFocus = value; }
 		}
 
-	}
+		public List<Spell> LearnedSpells
+		{
+			get { return _learnedSpells; }
+			set { _learnedSpells = value; }
+		}
+        #endregion
+
+        #region CONSTRUCTORS
+		public Player(string name, string description, int athleticism, int toughness, int mentalFotitude, int knowledge, int intellect)
+		{
+			_name = name;
+			_description = description;
+			_athleticism = athleticism;
+			_toughness = toughness;
+			_mentalFortitude = mentalFotitude;
+			_knowledge = knowledge;
+			_intellect = intellect;
+		}
+        #endregion
+
+    }
 }

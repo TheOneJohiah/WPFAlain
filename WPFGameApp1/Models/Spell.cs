@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameCalculatorV1
+namespace WPFGameApp1.Models
 {
     class Spell
     {
-		private string _name;
+        #region PROPERTIES
+        private string _name;
 		private string _description;
 		private string _aspect;
 		private int _damage;
@@ -69,6 +70,23 @@ namespace GameCalculatorV1
 			get { return _name; }
 			set { _name = value; }
 		}
+        #endregion
 
-	}
+        #region CONSTRUCTORS
+		public Spell(string name, string description, string aspect, int damage, int mana, int focus, int range, int radius, int duration)
+		{
+			_name = name;
+			_description = description;
+			_aspect = aspect;
+			_damage = damage;
+			_mana = mana;
+			_focus = focus;
+			_range = range;
+			_radius = radius;
+			_duration = duration;
+		}
+
+        #endregion
+
+    }
 }

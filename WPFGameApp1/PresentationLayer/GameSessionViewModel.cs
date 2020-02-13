@@ -7,5 +7,15 @@ namespace WPFGameApp1.PresentationLayer
     public class GameSessionViewModel : ObservableObject
     {
 
+
+
+
+        #region CONSTRUCTORS
+        public GameSessionViewModel()
+        {
+
+        }
+
+        #endregion
     }
 }

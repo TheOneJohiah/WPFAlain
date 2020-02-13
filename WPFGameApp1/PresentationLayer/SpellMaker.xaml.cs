@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WPFGameApp1.DataLayer;
+using WPFGameApp1.Models;
 
 namespace WPFGameApp1.PresentationLayer
 {
@@ -18,6 +19,8 @@ namespace WPFGameApp1.PresentationLayer
     /// </summary>
     public partial class SpellMaker : Window
     {
+        GameSessionViewModel _gameSessionViewModel;
+        
         public SpellMaker()
         {
             InitializeComponent();
@@ -29,9 +32,13 @@ namespace WPFGameApp1.PresentationLayer
 
         private void Button_Confirm_Click(object sender, RoutedEventArgs e)
         {
-            //NewSpell();
+            NewSpell();
         }
 
-
+        private Spell NewSpell()
+        {
+            List<Spell>
+            throw new NotImplementedException();
+        }
     }
 }
