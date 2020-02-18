@@ -32,15 +32,13 @@ namespace WPFGameApp1.PresentationLayer
 
         private void Button_Confirm_Click(object sender, RoutedEventArgs e)
         {
-            NewSpell(SpellList);
+            GameData.SpellList.Add(NewSpell());
         }
 
-        private List<Spell> NewSpell(List<Spell> SpellList)
+        private Spell NewSpell()
         {
-
-
-            //SpellList.Add(new Spell(name, description, aspect));
-            throw new NotImplementedException();
+            Spell spell = new Spell(name.Text, description.Text, aspect.Text, 0, 0, 0, 0, 0, 0);
+            return spell;
         }
     }
 }

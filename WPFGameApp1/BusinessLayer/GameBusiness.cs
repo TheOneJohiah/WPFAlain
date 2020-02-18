@@ -10,6 +10,7 @@ namespace WPFGameApp1.BusinessLayer
     public class GameBusiness
     {
         GameSessionViewModel _gameSessionViewModel;
+        List<Player> _player = new List<Player>;
         List<SpellComponent> _spellComponentList = new List<SpellComponent>();
 
         public GameBusiness()
@@ -20,12 +21,13 @@ namespace WPFGameApp1.BusinessLayer
 
         private void InitializeDataSet()
         {
+            _player = GameData.PlayerList();
             _spellComponentList = GameData.SpellComponentList();
         }
 
         private void InstantiateAndShowView()
         {
-            _gameSessionViewModel = new GameSessionViewModel();
+            _gameSessionViewModel = new GameSessionViewModel(_player);
 
             GameSessionView gameSessionView = new GameSessionView(_gameSessionViewModel);
 
