@@ -21,6 +21,9 @@ namespace WPFGameApp1.PresentationLayer
 
         public GameSessionView(GameSessionViewModel gameSessionViewModel)
         {
+            _gameSessionViewModel = gameSessionViewModel;
+
+
             InitializeComponent();
         }
 
@@ -38,7 +41,7 @@ namespace WPFGameApp1.PresentationLayer
 
         private void Button_Spell_Click(object sender, RoutedEventArgs e)
         {
-            SpellMaker spellMaker = new SpellMaker();
+            SpellMaker spellMaker = new SpellMaker(_gameSessionViewModel);
             spellMaker.ShowDialog();
         }
 

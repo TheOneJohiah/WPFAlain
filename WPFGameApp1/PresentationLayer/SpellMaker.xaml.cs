@@ -9,7 +9,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using WPFGameApp1.DataLayer;
 using WPFGameApp1.Models;
 
 namespace WPFGameApp1.PresentationLayer
@@ -19,10 +18,12 @@ namespace WPFGameApp1.PresentationLayer
     /// </summary>
     public partial class SpellMaker : Window
     {
-        //GameSessionViewModel _gameSessionViewModel;
+        GameSessionViewModel _gameSessionViewModel;
         
-        public SpellMaker()
+        public SpellMaker(GameSessionViewModel gameSessionViewModel)
         {
+            _gameSessionViewModel = gameSessionViewModel;
+
             InitializeComponent();
         }
         private void Button_Close_Click(object sender, RoutedEventArgs e)
@@ -32,11 +33,22 @@ namespace WPFGameApp1.PresentationLayer
 
         private void Button_Confirm_Click(object sender, RoutedEventArgs e)
         {
-            GameData.SpellList.Add(NewSpell());
+            _gameSessionViewModel.Spells.Add(NewSpell());
         }
 
         private Spell NewSpell()
         {
+            double damage;
+            double mana;
+            double focus;
+            int range;
+            int radius;
+            int duration;
+
+            if (aspect.Text.Length != 0)
+            {
+                _gameSessionViewModel.FindComponentByName(aspect.Text, _gameSessionViewModel.SpellComponents);
+            }
             Spell spell = new Spell(name.Text, description.Text, aspect.Text, 0, 0, 0, 0, 0, 0);
             return spell;
         }

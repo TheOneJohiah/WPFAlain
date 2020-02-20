@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPFGameApp1.Models
 {
-    class Spell
+    public class Spell
     {
         #region PROPERTIES
         private string _name;

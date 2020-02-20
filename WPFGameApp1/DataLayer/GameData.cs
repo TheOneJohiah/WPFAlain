@@ -8,11 +8,6 @@ namespace WPFGameApp1.DataLayer
 {
     class GameData
     {
-        public static SpellComponent FindComponentByName(string searchName)
-        {
-            return SpellComponentList().FirstOrDefault(i => i.Name == searchName);
-        }
-
         public static List<Player> PlayerList()
         {
             return new List<Player>()

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPFGameApp1.Models
 {
-    class Player
+    public class Player
     {
 		#region PROPERTIES
 		private string _name;
@@ -114,6 +114,8 @@ namespace WPFGameApp1.Models
 		}
         #endregion
 
+
+		// TODO: Refactor this constructor and the spellmaker window to account for which player the spell is being made.
         #region CONSTRUCTORS
 		public Player(string name, string description, int athleticism, int toughness, int mentalFotitude, int knowledge, int intellect)
 		{
