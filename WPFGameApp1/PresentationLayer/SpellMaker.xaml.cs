@@ -34,10 +34,12 @@ namespace WPFGameApp1.PresentationLayer
         private void Button_Confirm_Click(object sender, RoutedEventArgs e)
         {
             _gameSessionViewModel.Spells.Add(NewSpell());
+
         }
 
         private Spell NewSpell()
         {
+            SpellComponent placeHolder;
             double damage;
             double mana;
             double focus;
@@ -47,8 +49,10 @@ namespace WPFGameApp1.PresentationLayer
 
             if (aspect.Text.Length != 0)
             {
-                _gameSessionViewModel.FindComponentByName(aspect.Text, _gameSessionViewModel.SpellComponents);
+                placeHolder = _gameSessionViewModel.FindComponentByName(aspect.Text, _gameSessionViewModel.SpellComponents);
+
             }
+
             Spell spell = new Spell(name.Text, description.Text, aspect.Text, 0, 0, 0, 0, 0, 0);
             return spell;
         }

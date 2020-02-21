@@ -33,7 +33,7 @@ namespace WPFGameApp1.PresentationLayer
         #endregion
 
         #region METHODS
-        public static SpellComponent FindComponentByName(string searchName, List<SpellComponent> spellComponents)
+        public SpellComponent FindComponentByName(string searchName, List<SpellComponent> spellComponents)
         {
             return spellComponents.FirstOrDefault(i => i.Name == searchName);
         }
