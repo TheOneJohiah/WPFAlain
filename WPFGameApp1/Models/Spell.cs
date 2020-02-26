@@ -10,9 +10,9 @@ namespace WPFGameApp1.Models
         private string _name;
 		private string _description;
 		private string _aspect;
-		private int _damage;
-		private int _mana;
-		private int _focus;
+		private double _damage;
+		private double _mana;
+		private double _focus;
 		private int _range;
 		private int _radius;
 		private int _duration;
@@ -35,19 +35,19 @@ namespace WPFGameApp1.Models
 			set { _range = value; }
 		}
 
-		public int Focus
+		public double Focus
 		{
 			get { return _focus; }
 			set { _focus = value; }
 		}
 
-		public int Mana
+		public double Mana
 		{
 			get { return _mana; }
 			set { _mana = value; }
 		}
 
-		public int Damage
+		public double Damage
 		{
 			get { return _damage; }
 			set { _damage = value; }
@@ -73,7 +73,7 @@ namespace WPFGameApp1.Models
         #endregion
 
         #region CONSTRUCTORS
-		public Spell(string name, string description, string aspect, int damage, int mana, int focus, int range, int radius, int duration)
+		public Spell(string name, string description, string aspect, double damage, double mana, double focus, int range, int radius, int duration)
 		{
 			_name = name;
 			_description = description;

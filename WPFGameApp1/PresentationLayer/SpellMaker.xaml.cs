@@ -40,20 +40,23 @@ namespace WPFGameApp1.PresentationLayer
         private Spell NewSpell()
         {
             SpellComponent placeHolder;
-            double damage;
-            double mana;
-            double focus;
-            int range;
-            int radius;
-            int duration;
+            double damage = 0;
+            double mana = 0;
+            double focus = 0;
+            int range = 0;
+            int radius = 0;
+            int duration = 0;
 
             if (aspect.Text.Length != 0)
             {
                 placeHolder = _gameSessionViewModel.FindComponentByName(aspect.Text, _gameSessionViewModel.SpellComponents);
+                damage = placeHolder.Damage;
+                mana = placeHolder.ManaCost;
+                focus = placeHolder.FocusCost;
 
             }
 
-            Spell spell = new Spell(name.Text, description.Text, aspect.Text, 0, 0, 0, 0, 0, 0);
+            Spell spell = new Spell(name.Text, description.Text, aspect.Text, damage, mana, focus, range, radius, duration);
             return spell;
         }
     }

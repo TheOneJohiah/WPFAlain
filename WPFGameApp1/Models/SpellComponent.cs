@@ -10,10 +10,10 @@ namespace WPFGameApp1.Models
         private string _name;
 		private string _description;
 		private int _magnitude;
-		private int _damage;
-		private int _manaCost;
+		private double _damage;
+		private double _manaCost;
 		private double _manaMult;
-		private int _focusCost;
+		private double _focusCost;
 		private double _focusMult;
 		private int _range;
 		private int _radius;
@@ -78,7 +78,7 @@ namespace WPFGameApp1.Models
 			set { _focusMult = value; }
 		}
 
-		public int FocusCost
+		public double FocusCost
 		{
 			get { return _focusCost; }
 			set { _focusCost = value; }
@@ -90,13 +90,13 @@ namespace WPFGameApp1.Models
 			set { _manaMult = value; }
 		}
 
-		public int ManaCost
+		public double ManaCost
 		{
 			get { return _manaCost; }
 			set { _manaCost = value; }
 		}
 
-		public int Damage
+		public double Damage
 		{
 			get { return _damage; }
 			set { _damage = value; }
@@ -122,7 +122,7 @@ namespace WPFGameApp1.Models
         #endregion
 
         #region CONSTRUCTORS
-		public SpellComponent(string name, string description, int magnitude, int damage, int manaCost, double manaMult, int focusCost, double focusMult, int range, int radius, int duration, bool isMulti, bool isChannel, bool isConcentrate, bool isInverse, bool isHoming)
+		public SpellComponent(string name, string description, int magnitude, double damage, double manaCost, double manaMult, double focusCost, double focusMult, int range, int radius, int duration, bool isMulti, bool isChannel, bool isConcentrate, bool isInverse, bool isHoming)
 		{
 			_name = name;
 			_description = description;
