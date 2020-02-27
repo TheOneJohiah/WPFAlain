@@ -40,6 +40,7 @@ namespace WPFGameApp1.PresentationLayer
         private Spell NewSpell()
         {
             SpellComponent placeHolder;
+            int magnitude = 0;
             double damage = 0;
             double mana = 0;
             double focus = 0;
@@ -47,16 +48,29 @@ namespace WPFGameApp1.PresentationLayer
             int radius = 0;
             int duration = 0;
 
-            if (aspect.Text.Length != 0)
+            if (aspectBox.Text.Length != 0)
             {
-                placeHolder = _gameSessionViewModel.FindComponentByName(aspect.Text, _gameSessionViewModel.SpellComponents);
+                placeHolder = _gameSessionViewModel.FindComponentByName("Aspect", _gameSessionViewModel.SpellComponents);
+                int.TryParse(magnitudeBox.Text, out magnitude);
                 damage = placeHolder.Damage;
                 mana = placeHolder.ManaCost;
                 focus = placeHolder.FocusCost;
+                for (int i = 1; i < magnitude; i++)
+                {
+                    damage *= 2;
+                    mana *= 2;
+                    focus *= 2;
+                }
+                /*foreach (SpellComponent spellComponent in _gameSessionViewModel.SpellComponents)
+                {
+                    if (spellComponent.Name == firstMediumBox.Text)
+                    {
 
+                    }
+                }*/
             }
 
-            Spell spell = new Spell(name.Text, description.Text, aspect.Text, damage, mana, focus, range, radius, duration);
+            Spell spell = new Spell(nameBox.Text, descriptionBox.Text, aspectBox.Text, magnitude, damage, mana, focus, range, radius, duration);
             return spell;
         }
     }

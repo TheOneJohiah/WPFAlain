@@ -81,7 +81,7 @@
                         HorizontalAlignment="Left">
                         <Label Content="Spell name" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="name"
+                            x:Name="nameBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -91,7 +91,7 @@
                         HorizontalAlignment="Left">
                         <Label Content="Spell description" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="description"
+                            x:Name="descriptionBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -101,13 +101,13 @@
                         HorizontalAlignment="Left">
                         <Label Content="Aspect" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="aspect"
+                            x:Name="aspectBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
                         <Label Content="Magnitude" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
                         <TextBox
-                            x:Name="magnitude"
+                            x:Name="magnitudeBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -117,7 +117,7 @@
                         HorizontalAlignment="Left">
                         <Label Content="First Medium" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="firstMedium"
+                            x:Name="firstMediumBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -127,7 +127,7 @@
                         HorizontalAlignment="Left">
                         <Label Content="Second Medium" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="secondMedium"
+                            x:Name="secondMediumBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -137,13 +137,13 @@
                         HorizontalAlignment="Left">
                         <Label Content="First component" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="firstComponent"
+                            x:Name="firstComponentBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
                         <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
                         <TextBox
-                            x:Name="firstComponentCount"
+                            x:Name="firstComponentCountBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -153,13 +153,13 @@
                         HorizontalAlignment="Left">
                         <Label Content="Second component" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="secondComponent"
+                            x:Name="secondComponentBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
                         <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
                         <TextBox
-                            x:Name="secondComponentCount"
+                            x:Name="secondComponentCountBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -169,13 +169,13 @@
                         HorizontalAlignment="Left">
                         <Label Content="Third component" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="thirdComponent"
+                            x:Name="thirdComponentBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
                         <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
                         <TextBox
-                            x:Name="thirdComponentCount"
+                            x:Name="thirdComponentCountBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -185,13 +185,13 @@
                         HorizontalAlignment="Left">
                         <Label Content="Fourth component" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="fourthComponent"
+                            x:Name="fourthComponentBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
                         <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
                         <TextBox
-                            x:Name="fourthComponentCount"
+                            x:Name="fourthComponentCountBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -201,13 +201,13 @@
                         HorizontalAlignment="Left">
                         <Label Content="Fifth component" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
-                            x:Name="fifthComponent"
+                            x:Name="fifthComponentBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
                         <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
                         <TextBox
-                            x:Name="fifthComponentCount"
+                            x:Name="fifthComponentCountBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>

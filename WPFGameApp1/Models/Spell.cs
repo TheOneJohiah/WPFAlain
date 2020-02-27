@@ -10,6 +10,7 @@ namespace WPFGameApp1.Models
         private string _name;
 		private string _description;
 		private string _aspect;
+		private int _magnitude;
 		private double _damage;
 		private double _mana;
 		private double _focus;
@@ -53,6 +54,12 @@ namespace WPFGameApp1.Models
 			set { _damage = value; }
 		}
 
+		public int Magnitude
+		{
+			get { return _magnitude; }
+			set { _magnitude = value; }
+		}
+
 		public string Aspect
 		{
 			get { return _aspect; }
@@ -73,11 +80,12 @@ namespace WPFGameApp1.Models
         #endregion
 
         #region CONSTRUCTORS
-		public Spell(string name, string description, string aspect, double damage, double mana, double focus, int range, int radius, int duration)
+		public Spell(string name, string description, string aspect, int magnitude, double damage, double mana, double focus, int range, int radius, int duration)
 		{
 			_name = name;
 			_description = description;
 			_aspect = aspect;
+			_magnitude = magnitude;
 			_damage = damage;
 			_mana = mana;
 			_focus = focus;
