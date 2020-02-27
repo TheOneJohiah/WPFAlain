@@ -9,7 +9,6 @@ namespace WPFGameApp1.Models
         #region PROPERTIES
         private string _name;
 		private string _description;
-		private int _magnitude;
 		private double _damage;
 		private double _manaCost;
 		private double _manaMult;
@@ -102,12 +101,6 @@ namespace WPFGameApp1.Models
 			set { _damage = value; }
 		}
 
-		public int Magnitude
-		{
-			get { return _magnitude; }
-			set { _magnitude = value; }
-		}
-
 		public string Description
 		{
 			get { return _description; }
@@ -122,11 +115,10 @@ namespace WPFGameApp1.Models
         #endregion
 
         #region CONSTRUCTORS
-		public SpellComponent(string name, string description, int magnitude, double damage, double manaCost, double manaMult, double focusCost, double focusMult, int range, int radius, int duration, bool isMulti, bool isChannel, bool isConcentrate, bool isInverse, bool isHoming)
+		public SpellComponent(string name, string description, double damage, double manaCost, double manaMult, double focusCost, double focusMult, int range, int radius, int duration, bool isMulti, bool isChannel, bool isConcentrate, bool isInverse, bool isHoming)
 		{
 			_name = name;
 			_description = description;
-			_magnitude = magnitude;
 			_damage = damage;
 			_manaCost = manaCost;
 			_manaMult = manaMult;
