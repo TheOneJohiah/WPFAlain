@@ -117,7 +117,7 @@ namespace WPFGameApp1.Models
 
 		// TODO: Refactor this constructor and the spellmaker window to account for which player the spell is being made.
         #region CONSTRUCTORS
-		public Player(string name, string description, int athleticism, int toughness, int mentalFotitude, int knowledge, int intellect)
+		public Player(string name, string description, int athleticism, int toughness, int mentalFotitude, int knowledge, int intellect, List<Spell> learnedSpells)
 		{
 			_name = name;
 			_description = description;
@@ -126,6 +126,7 @@ namespace WPFGameApp1.Models
 			_mentalFortitude = mentalFotitude;
 			_knowledge = knowledge;
 			_intellect = intellect;
+			_learnedSpells = learnedSpells;
 		}
         #endregion
 

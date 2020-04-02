@@ -61,13 +61,18 @@ namespace WPFGameApp1.PresentationLayer
                     mana *= 2;
                     focus *= 2;
                 }
-                /*foreach (SpellComponent spellComponent in _gameSessionViewModel.SpellComponents)
+                foreach (SpellComponent spellComponent in _gameSessionViewModel.SpellComponents)
                 {
-                    if (spellComponent.Name == firstMediumBox.Text)
+                    if (spellComponent.Name == firstMediumBox.Text || spellComponent.Name == secondMediumBox.Text || spellComponent.Name == firstComponentBox.Text || spellComponent.Name == secondComponentBox.Text || spellComponent.Name == thirdComponentBox.Text || spellComponent.Name == fourthComponentBox.Text || spellComponent.Name == fifthComponentBox.Text)
                     {
-
+                        damage = damage + spellComponent.Damage;
+                        mana = mana + spellComponent.ManaCost;
+                        focus = focus + spellComponent.FocusCost;
+                        range = range + spellComponent.Range;
+                        radius = radius + spellComponent.Radius;
+                        duration = duration + spellComponent.Duration;
                     }
-                }*/
+                }
             }
 
             Spell spell = new Spell(nameBox.Text, descriptionBox.Text, aspectBox.Text, magnitude, damage, mana, focus, range, radius, duration);

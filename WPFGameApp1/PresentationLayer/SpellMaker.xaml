@@ -141,12 +141,6 @@
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
-                        <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
-                        <TextBox
-                            x:Name="firstComponentCountBox"
-                            Height="Auto"
-                            Width="Auto"
-                            Style="{StaticResource SInputBox}"/>
                     </StackPanel>
                     <StackPanel
                         Orientation="Horizontal"
@@ -154,12 +148,6 @@
                         <Label Content="Second component" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
                             x:Name="secondComponentBox"
-                            Height="Auto"
-                            Width="Auto"
-                            Style="{StaticResource SInputBox}"/>
-                        <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
-                        <TextBox
-                            x:Name="secondComponentCountBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
@@ -173,12 +161,6 @@
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
-                        <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
-                        <TextBox
-                            x:Name="thirdComponentCountBox"
-                            Height="Auto"
-                            Width="Auto"
-                            Style="{StaticResource SInputBox}"/>
                     </StackPanel>
                     <StackPanel
                         Orientation="Horizontal"
@@ -189,12 +171,6 @@
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
-                        <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
-                        <TextBox
-                            x:Name="fourthComponentCountBox"
-                            Height="Auto"
-                            Width="Auto"
-                            Style="{StaticResource SInputBox}"/>
                     </StackPanel>
                     <StackPanel
                         Orientation="Horizontal"
@@ -202,12 +178,6 @@
                         <Label Content="Fifth component" Style="{StaticResource LabelSInfo}"/>
                         <TextBox
                             x:Name="fifthComponentBox"
-                            Height="Auto"
-                            Width="Auto"
-                            Style="{StaticResource SInputBox}"/>
-                        <Label Content="Component count" Style="{StaticResource LabelSInfo}" Margin="20,0,0,0"/>
-                        <TextBox
-                            x:Name="fifthComponentCountBox"
                             Height="Auto"
                             Width="Auto"
                             Style="{StaticResource SInputBox}"/>
