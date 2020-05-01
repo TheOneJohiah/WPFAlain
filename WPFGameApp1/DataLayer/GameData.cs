@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Data.SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,15 +9,19 @@ namespace WPFGameApp1.DataLayer
 {
     class GameData
     {
-        public static List<Player> PlayerList()
+        public static List<Player> LoadPlayerList()
         {
-            return new List<Player>()
-            {
+            List<Player> playerList = new List<Player>();
+            String connectionString = null;
+            connectionString = "Server=localhost;Database=alainDB";
+            //SqlConnection cnn = new SqlConnection(connectionString);
 
-            };
+
+
+            return playerList;
         }
 
-        public static List<Spell> SpellList()
+        public static List<Spell> LoadSpellList()
         {
             return new List<Spell>()
             {

@@ -7,12 +7,13 @@ namespace WPFGameApp1.Models
     public class Player
     {
 		#region PROPERTIES
+		private int _playerId;
 		private string _name;
 		private string _description;
 		private int _athleticism;
 		private int _toughness;
 		private int _mentalFortitude;
-		private int _knowledge;
+		private int _memory;
 		private int _intellect;
 		private int _maxHealth;
 		private int _currentHealth;
@@ -22,6 +23,12 @@ namespace WPFGameApp1.Models
 		private int _spellCap;
 		private int _maxFocus;
 		private List<Spell> _learnedSpells;
+
+		public int PlayerId
+		{
+			get { return _playerId; }
+			set { _playerId = value; }
+		}
 
 		public string Name
 		{
@@ -53,10 +60,10 @@ namespace WPFGameApp1.Models
 			set { _mentalFortitude = value; }
 		}
 
-		public int Knowledge
+		public int Memory
 		{
-			get { return _knowledge; }
-			set { _knowledge = value; }
+			get { return _memory; }
+			set { _memory = value; }
 		}
 
 		public int Intellect
@@ -117,14 +124,15 @@ namespace WPFGameApp1.Models
 
 		// TODO: Refactor this constructor and the spellmaker window to account for which player the spell is being made.
         #region CONSTRUCTORS
-		public Player(string name, string description, int athleticism, int toughness, int mentalFotitude, int knowledge, int intellect, List<Spell> learnedSpells)
+		public Player(int playerId, string name, string description, int athleticism, int toughness, int mentalFortitude, int memory, int intellect, List<Spell> learnedSpells)
 		{
+			_playerId = playerId;
 			_name = name;
 			_description = description;
 			_athleticism = athleticism;
 			_toughness = toughness;
-			_mentalFortitude = mentalFotitude;
-			_knowledge = knowledge;
+			_mentalFortitude = mentalFortitude;
+			_memory = memory;
 			_intellect = intellect;
 			_learnedSpells = learnedSpells;
 		}

@@ -6,8 +6,9 @@ namespace WPFGameApp1.Models
 {
     public class Spell
     {
-        #region PROPERTIES
-        private string _name;
+		#region PROPERTIES
+		private int _spellId;
+		private string _name;
 		private string _description;
 		private string _aspect;
 		private int _magnitude;
@@ -17,6 +18,12 @@ namespace WPFGameApp1.Models
 		private int _range;
 		private int _radius;
 		private int _duration;
+
+		public int SpellId
+		{
+			get { return _spellId; }
+			set { _spellId = value; }
+		}
 
 		public int Duration
 		{
@@ -80,6 +87,21 @@ namespace WPFGameApp1.Models
         #endregion
 
         #region CONSTRUCTORS
+		public Spell(int spellId, string name, string description, string aspect, int magnitude, double damage, double mana, double focus, int range, int radius, int duration)
+		{
+			_spellId = spellId;
+			_name = name;
+			_description = description;
+			_aspect = aspect;
+			_magnitude = magnitude;
+			_damage = damage;
+			_mana = mana;
+			_focus = focus;
+			_range = range;
+			_radius = radius;
+			_duration = duration;
+		}
+
 		public Spell(string name, string description, string aspect, int magnitude, double damage, double mana, double focus, int range, int radius, int duration)
 		{
 			_name = name;
@@ -94,7 +116,7 @@ namespace WPFGameApp1.Models
 			_duration = duration;
 		}
 
-        #endregion
+		#endregion
 
-    }
+	}
 }

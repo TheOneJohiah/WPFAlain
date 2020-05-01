@@ -22,8 +22,8 @@ namespace WPFGameApp1.BusinessLayer
 
         private void InitializeDataSet()
         {
-            _player = GameData.PlayerList();
-            _spells = GameData.SpellList();
+            _player = GameData.LoadPlayerList();
+            _spells = GameData.LoadSpellList();
             _spellComponentList = GameData.SpellComponentList();
         }
 
