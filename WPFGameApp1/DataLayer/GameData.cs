@@ -13,7 +13,6 @@ namespace WPFGameApp1.DataLayer
             List<Player> playerList = new List<Player>();
 
             SqlWorker sqlWorker = new SqlWorker();
-            sqlWorker.
 
             return playerList;
         }

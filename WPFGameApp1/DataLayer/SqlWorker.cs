@@ -14,6 +14,7 @@ namespace WPFGameApp1.DataLayer
             //CreateTable(sqlite_conn);
             //InsertData(sqlite_conn);
             //ReadData(sqlite_conn);
+            sqlite_conn.Close();
         }
 
         static SQLiteConnection CreateConnection()
@@ -25,7 +26,6 @@ namespace WPFGameApp1.DataLayer
             try
             {
                 sqlite_conn.Open();
-                Console.WriteLine("It works!");
             }
             catch (Exception ex)
             {
