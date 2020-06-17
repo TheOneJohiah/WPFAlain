@@ -11,12 +11,19 @@ namespace WPFGameApp1.PresentationLayer
         #region PROPERTIES
         private List<Player> _players;
         private List<Spell> _spells;
+        private List<Item> _items;
         private List<SpellComponent> _spellComponents;
 
         public List<SpellComponent> SpellComponents
         {
             get { return _spellComponents; }
             set { _spellComponents = value; }
+        }
+
+        public List<Item> Items
+        {
+            get { return _items; }
+            set { _items = value; }
         }
 
         public List<Spell> Spells
@@ -41,10 +48,11 @@ namespace WPFGameApp1.PresentationLayer
         #endregion
 
         #region CONSTRUCTORS
-        public GameSessionViewModel(List<Player> player, List<Spell> spells, List<SpellComponent> spellComponents)
+        public GameSessionViewModel(List<Player> player, List<Spell> spells, List<Item> items, List<SpellComponent> spellComponents)
         {
             _players = player;
             _spells = spells;
+            _items = items;
             _spellComponents = spellComponents;
         }
 

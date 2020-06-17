@@ -23,6 +23,7 @@ namespace WPFGameApp1.Models
 		private int _spellCap;
 		private int _maxFocus;
 		private List<Spell> _learnedSpells;
+		private List<Item> _inventory;
 
 		public int PlayerId
 		{
@@ -119,12 +120,18 @@ namespace WPFGameApp1.Models
 			get { return _learnedSpells; }
 			set { _learnedSpells = value; }
 		}
-        #endregion
+
+		public List<Item> Inventory
+		{
+			get { return _inventory; }
+			set { _inventory = value; }
+		}
+		#endregion
 
 
 		// TODO: Refactor this constructor and the spellmaker window to account for which player the spell is being made.
-        #region CONSTRUCTORS
-		public Player(int playerId, string name, string description, int athleticism, int toughness, int mentalFortitude, int memory, int intellect, List<Spell> learnedSpells)
+		#region CONSTRUCTORS
+		public Player(int playerId, string name, string description, int athleticism, int toughness, int mentalFortitude, int memory, int intellect, List<Spell> learnedSpells, List<Item> inventory)
 		{
 			_playerId = playerId;
 			_name = name;
@@ -135,6 +142,7 @@ namespace WPFGameApp1.Models
 			_memory = memory;
 			_intellect = intellect;
 			_learnedSpells = learnedSpells;
+			_inventory = inventory;
 		}
         #endregion
 

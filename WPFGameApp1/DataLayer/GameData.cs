@@ -14,6 +14,7 @@ namespace WPFGameApp1.DataLayer
 
             SqlWorker sqlWorker = new SqlWorker();
 
+            
             return playerList;
         }
 
@@ -22,6 +23,13 @@ namespace WPFGameApp1.DataLayer
             List<Spell> spellList = new List<Spell>();
 
             return new List<Spell>();
+        }
+
+        public static List<Item> LoadItemList()
+        {
+            List<Item> itemList = new List<Item>();
+
+            return new List<Item>();
         }
 
         public static List<SpellComponent> SpellComponentList()
