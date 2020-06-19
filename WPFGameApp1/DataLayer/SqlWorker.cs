@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WPFGameApp1.DataLayer
 {
-    class SqlWorker
+    public class SqlWorker
     {
         public SqlWorker()
         {

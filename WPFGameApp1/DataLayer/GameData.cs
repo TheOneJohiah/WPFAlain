@@ -8,11 +8,13 @@ namespace WPFGameApp1.DataLayer
 {
     class GameData
     {
-        public static List<Player> LoadPlayerList()
+        SqlWorker sqlWorker = new SqlWorker();
+
+        public static List<Player> LoadPlayerList(SqlWorker sqlWorker)
         {
             List<Player> playerList = new List<Player>();
-
-            SqlWorker sqlWorker = new SqlWorker();
+            
+            
 
             
             return playerList;

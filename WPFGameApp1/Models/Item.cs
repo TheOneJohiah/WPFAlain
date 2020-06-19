@@ -11,8 +11,7 @@ namespace WPFGameApp1.Models
         private string _name;
         private string _description;
         private int _value;
-
-
+        
         public int ItemID
         {
             get { return _itemId; }
