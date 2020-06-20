@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPFGameApp1.Models.Items
 {
-    class ItemActive : Item
+    public class ItemActive : Item
     {
 		#region PROPERTIES
 		private int _castsPerTurn;
@@ -38,5 +38,13 @@ namespace WPFGameApp1.Models.Items
 		}
 
 		#endregion
+
+		public ItemActive(int itemId, string name, string description, int value, int casts, double focusMod, double enchantProf, Spell boundSpell) : base(itemId, name, description, value)
+		{
+			_castsPerTurn = casts;
+			_focusMod = focusMod;
+			_enchantProficiency = enchantProf;
+			_boundSpell = boundSpell;
+		}
 	}
 }

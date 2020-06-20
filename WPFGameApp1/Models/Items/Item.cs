@@ -38,9 +38,12 @@ namespace WPFGameApp1.Models.Items
 
         #endregion
 
-        public Item()
+        public Item(int itemId, string name, string description, int value)
         {
-
+            _itemId = itemId;
+            _name = name;
+            _description = description;
+            _value = value;
         }
     }
 }
