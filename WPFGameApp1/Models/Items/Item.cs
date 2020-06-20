@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WPFGameApp1.Models
+namespace WPFGameApp1.Models.Items
 {
     public class Item
     {
