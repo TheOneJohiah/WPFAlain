@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPFGameApp1.Models.Items
 {
-    class Weapon : Item
+    public class Weapon : Item
     {
         #region PROPERTIES
         private int _damage;
@@ -16,5 +16,10 @@ namespace WPFGameApp1.Models.Items
 		}
 
 		#endregion
+
+		public Weapon(int itemId, string name, string description, int value) : base(itemId, name, description, value)
+		{
+
+		}
 	}
 }

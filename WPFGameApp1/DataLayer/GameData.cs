@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WPFGameApp1.Models;
+using WPFGameApp1.Models.Items;
+using WPFGameApp1.Models.Creatures;
 
 namespace WPFGameApp1.DataLayer
 {

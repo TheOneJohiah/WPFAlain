@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WPFGameApp1.Models.Items;
 
-namespace WPFGameApp1.Models
+namespace WPFGameApp1.Models.Creatures
 {
     public class Player
     {

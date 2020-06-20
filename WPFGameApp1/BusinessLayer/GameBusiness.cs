@@ -4,6 +4,8 @@ using System.Text;
 using WPFGameApp1.PresentationLayer;
 using WPFGameApp1.DataLayer;
 using WPFGameApp1.Models;
+using WPFGameApp1.Models.Creatures;
+using WPFGameApp1.Models.Items;
 
 namespace WPFGameApp1.BusinessLayer
 {

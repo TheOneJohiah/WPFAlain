@@ -45,5 +45,10 @@ namespace WPFGameApp1.Models.Items
 
         #endregion
 
+
+        public WeaponPassive(int itemId, string name, string description, int value) : base(itemId, name, description, value)
+        {
+
+        }
     }
 }
