@@ -19,9 +19,9 @@ namespace WPFGameApp1.Models.Creatures
 		private int _maxHealth;
 		private int _currentHealth;
 		private int _manaCapacity;
-		private int _currentMana;
-		private int _manaRegen;
-		private int _spellCap;
+		private double _currentMana;
+		private double _manaRegen;
+		private double _spellCap;
 		private int _maxFocus;
 		private List<Spell> _learnedSpells;
 		private List<Item> _inventory;
@@ -92,19 +92,19 @@ namespace WPFGameApp1.Models.Creatures
 			set { _manaCapacity = value; }
 		}
 
-		public int CurrentMana
+		public double CurrentMana
 		{
 			get { return _currentMana; }
 			set { _currentMana = value; }
 		}
 
-		public int ManaRegen
+		public double ManaRegen
 		{
 			get { return _manaRegen; }
 			set { _manaRegen = value; }
 		}
 
-		public int MaxFocusCap
+		public double SpellCap
 		{
 			get { return _spellCap; }
 			set { _spellCap = value; }

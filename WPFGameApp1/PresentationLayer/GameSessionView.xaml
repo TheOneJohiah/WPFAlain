@@ -15,6 +15,12 @@
             <Setter Property="Width" Value="110"/>
             <Setter Property="FontFamily" Value="Georgia"/>
         </Style>
+        <Style x:Key="LabelTop" TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -71,6 +77,11 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <Label
+                x:Name="Date"
+                Grid.Column="1"
+                Content="{Binding Date, Mode=OneWay}"
+                Style="{StaticResource LabelTop}"/>
             <Button
                 x:Name="Button_Close"
                 Grid.Row="0"
