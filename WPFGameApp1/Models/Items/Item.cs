@@ -6,12 +6,30 @@ namespace WPFGameApp1.Models.Items
 {
     public class Item
     {
-        #region PROPERTIES
+        #region ENUMERABLES
+
+        public enum Enchant
+        {
+            NONE,
+            ACTIVE,
+            PASSIVE
+        }
+
+        #endregion
+
+
+        #region FIELDS
+
         private int _itemId;
         private string _name;
         private string _description;
         private int _value;
-        
+
+        #endregion
+
+
+        #region PROPERTIES
+
         public int ItemID
         {
             get { return _itemId; }
@@ -38,6 +56,14 @@ namespace WPFGameApp1.Models.Items
 
         #endregion
 
+
+        #region CONSTRUCTORS
+
+        public Item()
+        {
+
+        }
+
         public Item(int itemId, string name, string description, int value)
         {
             _itemId = itemId;
@@ -45,5 +71,7 @@ namespace WPFGameApp1.Models.Items
             _description = description;
             _value = value;
         }
+
+        #endregion
     }
 }

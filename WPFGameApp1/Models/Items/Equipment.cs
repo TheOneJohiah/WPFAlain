@@ -6,9 +6,15 @@ namespace WPFGameApp1.Models.Items
 {
     class Equipment : Item
     {
-        #region PROPERTIES
+        #region FIELDS
+
         private int _armorHard;
         private double _armorSoft;
+
+        #endregion
+
+
+        #region PROPERTIES
 
         public int ArmorHard
         {
@@ -24,9 +30,19 @@ namespace WPFGameApp1.Models.Items
 
         #endregion
 
+
+        #region CONSTRUCTORS
+
+        public Equipment()
+        {
+
+        }
+
         public Equipment(int itemId, string name, string description, int value) : base(itemId, name, description, value)
         {
 
         }
+
+        #endregion
     }
 }

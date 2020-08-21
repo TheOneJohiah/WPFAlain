@@ -6,20 +6,34 @@ namespace WPFGameApp1.Models.Items
 {
     public class Weapon : Item
     {
-        #region PROPERTIES
+        #region FIELDS
         private int _damage;
+        #endregion
 
-		public int Damage
+
+        #region PROPERTIES
+
+        public int Damage
 		{
 			get { return _damage; }
 			set { _damage = value; }
 		}
 
-		#endregion
+        #endregion
 
-		public Weapon(int itemId, string name, string description, int value) : base(itemId, name, description, value)
+
+        #region CONSTRUCTORS
+
+		public Weapon()
+        {
+
+        }
+
+        public Weapon(int itemId, string name, string description, int value) : base(itemId, name, description, value)
 		{
 
 		}
-	}
+
+        #endregion
+    }
 }
