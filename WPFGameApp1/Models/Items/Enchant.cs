@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPFGameApp1.Models.Items
 {
-    interface IEnchant
+    class Enchant
     {
     }
 }
